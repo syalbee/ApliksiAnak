@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="30dp"
+        android:text="Child Tracking" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="138dp"
+        android:layout_height="185dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/assetlogo"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="Login with Goole"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/ivLogo"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="Kids Apps"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/btnLogin"
+        />
+
+
+</RelativeLayout>
